@@ -1,0 +1,26 @@
+{
+  "name": "electrontest",
+  "productName": "ElectronTest",
+  "version": "1.0.0",
+  "description": "a test",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-builder",
+    "start": "electron .",
+    "clean": "rmdir /s /q dist"
+  },
+  "build": {
+    "appId": "com.jkvelagapudi.ElectronTest",
+    "linux": {
+      "target": ["appimage"],
+      "icon": "build/icon.png"
+    }
+  },
+  "author": "Jayadeep V",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.2.0",
+    "electron-builder": "^24.13.3"
+  }
+}
